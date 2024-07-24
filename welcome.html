@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Welcome Back!</title>
+        <link href="welcome.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- top half -->
+        <div id="withdraw" class="topHalf">
+            <p class="name">withdraw</p>
+            <p id="withdrawAmount" class="numbers">$<span id="with">0</span></p>
+        </div>
+        <div id="balance" class="topHalf">
+            <p class="name">balance</p>
+            <p id="balanceAmount" class="numbers">$<span id="bal">500</span></p>
+        </div>
+        <div id="deposit" class="topHalf">
+            <p class="name">deposit</p>
+            <p id="depositAmount" class="numbers">$<span id="dep">0</span></p>
+        </div>
+
+        <!-- bottom half -->
+        <div id="withdrawSection" class="bottomHalf">
+            <p class="label">withdraw</p>
+            <input placeholder="withdraw" class="input" type="number" min="0" id="amount1"><br>
+            <button id="withdrawBtn" class="btns">withdraw</button>
+        </div>
+        <div id="depositSection" class="bottomHalf">
+            <p class="label">deposit</p>
+            <input placeholder="deposit" class="input" type="number" min="0" id="amount2"><br>
+            <button id="depositBtn" class="btns">deposit</button>
+        </div>
+        <script src="welcome.js"></script>
+    </body>
+</html>
